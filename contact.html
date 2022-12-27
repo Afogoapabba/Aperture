@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" async></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin: 0;" class="darkmode">
+    <div class="flex-box">
+        <button id="btnDarkmode" onclick="changeMode()" class="btnTheme">Dark Mode</button>
+        <div class="flex-column">
+            <h1>APERTURE</h1>
+            <h2>LABORATORIES</h2>
+        </div>
+        <div class="flex-row">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+        </div>
+        <div class="flex-row">
+            <div class="flex-content">
+
+                <div class="flex-content">
+                    <img src="Office.png" alt="Aperture office" class="custom-img">
+                </div>
+             
+                <h3>Contact us</h3>
+                <br>Address: Michigan, Abandoned salt mine</br>
+                <br>Phonenumber: 313 555 3950</br>
+            </div>
+                <div class="flex-content">
+                <form onsubmit="">
+              
+                    <label for="userEmail">Email address</label>
+                    <input type="email" id="userEmail" name="email" placeholder="Your email..">
+                
+                    <label for="contactReason">Contact reason</label>
+                    <select id="contactReason" name="contactreason">
+                      <option value="binquiry">Business inquiry</option>
+                      <option value="aboutus">Questions about Aperture</option>
+                      <option value="aboutsite">Comments on website</option>
+                    </select>
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="button" value="Submit" onclick="sendMail()">
+                
+                  </form>    
+                  <div id="notification" class="hidden"></div>
+    </div>
+            
+              
+        </div>
+    </div>
+
+</body>
+</html>
